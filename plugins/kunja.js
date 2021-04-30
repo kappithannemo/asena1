@@ -11,7 +11,7 @@ const got = require('got');
 const Language = require('../language');
 const Lang = Language.getString('weather');
 
-Asena.addCommand({pattern: 'kunjappa ?(.*)', fromMe: false }, async (message, match) => {
+Asena.addCommand({pattern: 'kunjappa ', fromMe: false }, async (message, match) => {
 	
 	const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=en&cf=true`;
 	try {

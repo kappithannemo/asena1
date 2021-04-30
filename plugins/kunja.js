@@ -23,4 +23,4 @@ Asena.addCommand({pattern: 'kunja ?(.*)', fromMe: false }, async (message, match
 	} catch {
 		return await message.client.sendMessage(message.jid, "Err..error", MessageType.text);
 	}
-}));
+});
